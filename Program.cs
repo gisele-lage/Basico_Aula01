@@ -4,39 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Basico_Aula01
+namespace Basico_Aula02
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //Saída de dados
-            Console.WriteLine("Ola, Mundo!");
+             bool s = true; // Apenas criando uma variável do tipo booleano
+            Console.WriteLine(s);
+
+            /*------------------------------------------------------------------*/
+
+            int[] vetor = new int[3];  // Criei um vetor com 3 casas, 3 index
+
+            Console.WriteLine("Digite o 1º valor: ");
+            vetor[0] = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o 2º valor: ");
+            vetor[1] = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o 3º valor: ");
+            vetor[2] = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Os valores digitados para o vetor foram: ");
+            Console.WriteLine("{0}", vetor[0]);
+            Console.WriteLine("{0}", vetor[1]);
+            Console.WriteLine("{0}\n", vetor[2]);
+
+            // Tem como criar o vetor já iniciando-o
+
+            Console.WriteLine("Vetor já iniciado: ");
+
+            int[] vetor1 = { 10, 14, 35 };
+            Console.WriteLine("{0}", vetor1[0]);
+            Console.WriteLine("{0}", vetor1[1]);
+            Console.WriteLine("{0}", vetor1[2]);
+
             
-            /*------------------------------------------------*/
-
-            // Criando variáveis
-
-            int idade = 20; // Declarando e inicializando a variável
-            string nome; // Apenas declarando a variável
-
-            float altura = 1.55f; // float usa f no final
-            double altura_2 = 1.55; 
-
-
-
-            /*-------------------------------------------------*/
-
-            // Entrada de dados
-            Console.WriteLine("Digite o seu nome: ");
-            nome = Console.ReadLine(); // Lê a entrada de dados
-
-            Console.WriteLine("O seu nome é: {0}", nome); // Exibe o nome na tela
-            Console.WriteLine("A sua idade é: {0}", idade);
-            Console.WriteLine("A sua altura é: {0}", altura);
-            Console.WriteLine("A altura usando o Double é: {0}", altura_2);
-
-
         }
     }
 }
